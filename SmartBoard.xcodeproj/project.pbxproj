@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		714E0DEA2B77CA2700E0EEFD /* SmartBoardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0DE92B77CA2700E0EEFD /* SmartBoardApp.swift */; };
+		714E0DEC2B77CA2700E0EEFD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0DEB2B77CA2700E0EEFD /* ContentView.swift */; };
+		714E0DF02B77CA2700E0EEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714E0DEF2B77CA2700E0EEFD /* Assets.xcassets */; };
+		714E0DF32B77CA2700E0EEFD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714E0DF22B77CA2700E0EEFD /* Preview Assets.xcassets */; };
+		714E0DFD2B77CA2700E0EEFD /* SmartBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0DFC2B77CA2700E0EEFD /* SmartBoardTests.swift */; };
+		714E0E072B77CA2700E0EEFD /* SmartBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E062B77CA2700E0EEFD /* SmartBoardUITests.swift */; };
+		714E0E092B77CA2700E0EEFD /* SmartBoardUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E082B77CA2700E0EEFD /* SmartBoardUITestsLaunchTests.swift */; };
+		714E0E392B77D97C00E0EEFD /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714E0E1B2B77CA4800E0EEFD /* WidgetKit.framework */; };
+		714E0E3A2B77D97C00E0EEFD /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714E0E1D2B77CA4800E0EEFD /* SwiftUI.framework */; };
+		714E0E3D2B77D97C00E0EEFD /* SmartBoardWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E3C2B77D97C00E0EEFD /* SmartBoardWidgetBundle.swift */; };
+		714E0E3F2B77D97C00E0EEFD /* SmartBoardWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E3E2B77D97C00E0EEFD /* SmartBoardWidgetLiveActivity.swift */; };
+		714E0E412B77D97C00E0EEFD /* SmartBoardWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E402B77D97C00E0EEFD /* SmartBoardWidget.swift */; };
+		714E0E432B77D97C00E0EEFD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E422B77D97C00E0EEFD /* AppIntent.swift */; };
+		714E0E452B77D97D00E0EEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714E0E442B77D97D00E0EEFD /* Assets.xcassets */; };
+		714E0E492B77D97D00E0EEFD /* SmartBoardWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 714E0E382B77D97C00E0EEFD /* SmartBoardWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		714E0DF92B77CA2700E0EEFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 714E0DDE2B77CA2700E0EEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 714E0DE52B77CA2700E0EEFD;
+			remoteInfo = SmartBoard;
+		};
+		714E0E032B77CA2700E0EEFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 714E0DDE2B77CA2700E0EEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 714E0DE52B77CA2700E0EEFD;
+			remoteInfo = SmartBoard;
+		};
+		714E0E472B77D97D00E0EEFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 714E0DDE2B77CA2700E0EEFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 714E0E372B77D97C00E0EEFD;
+			remoteInfo = SmartBoardWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		714E0E312B77CA4900E0EEFD /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				714E0E492B77D97D00E0EEFD /* SmartBoardWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		714E0DE62B77CA2700E0EEFD /* SmartBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		714E0DE92B77CA2700E0EEFD /* SmartBoardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBoardApp.swift; sourceTree = "<group>"; };
+		714E0DEB2B77CA2700E0EEFD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		714E0DEF2B77CA2700E0EEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		714E0DF22B77CA2700E0EEFD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		714E0DF82B77CA2700E0EEFD /* SmartBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		714E0DFC2B77CA2700E0EEFD /* SmartBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBoardTests.swift; sourceTree = "<group>"; };
+		714E0E022B77CA2700E0EEFD /* SmartBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		714E0E062B77CA2700E0EEFD /* SmartBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBoardUITests.swift; sourceTree = "<group>"; };
+		714E0E082B77CA2700E0EEFD /* SmartBoardUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBoardUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		714E0E1B2B77CA4800E0EEFD /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		714E0E1D2B77CA4800E0EEFD /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		714E0E322B77CF9800E0EEFD /* SmartBoard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartBoard.entitlements; sourceTree = "<group>"; };
+		714E0E332B77CFC900E0EEFD /* SmartBoardWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SmartBoardWidgetExtension.entitlements; sourceTree = "<group>"; };
+		714E0E382B77D97C00E0EEFD /* SmartBoardWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SmartBoardWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		714E0E3C2B77D97C00E0EEFD /* SmartBoardWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBoardWidgetBundle.swift; sourceTree = "<group>"; };
+		714E0E3E2B77D97C00E0EEFD /* SmartBoardWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBoardWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		714E0E402B77D97C00E0EEFD /* SmartBoardWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartBoardWidget.swift; sourceTree = "<group>"; };
+		714E0E422B77D97C00E0EEFD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		714E0E442B77D97D00E0EEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		714E0E462B77D97D00E0EEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		714E0DE32B77CA2700E0EEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0DF52B77CA2700E0EEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0DFF2B77CA2700E0EEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0E352B77D97C00E0EEFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714E0E3A2B77D97C00E0EEFD /* SwiftUI.framework in Frameworks */,
+				714E0E392B77D97C00E0EEFD /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		714E0DDD2B77CA2700E0EEFD = {
+			isa = PBXGroup;
+			children = (
+				714E0E332B77CFC900E0EEFD /* SmartBoardWidgetExtension.entitlements */,
+				714E0DE82B77CA2700E0EEFD /* SmartBoard */,
+				714E0DFB2B77CA2700E0EEFD /* SmartBoardTests */,
+				714E0E052B77CA2700E0EEFD /* SmartBoardUITests */,
+				714E0E3B2B77D97C00E0EEFD /* SmartBoardWidget */,
+				714E0E1A2B77CA4800E0EEFD /* Frameworks */,
+				714E0DE72B77CA2700E0EEFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		714E0DE72B77CA2700E0EEFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				714E0DE62B77CA2700E0EEFD /* SmartBoard.app */,
+				714E0DF82B77CA2700E0EEFD /* SmartBoardTests.xctest */,
+				714E0E022B77CA2700E0EEFD /* SmartBoardUITests.xctest */,
+				714E0E382B77D97C00E0EEFD /* SmartBoardWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		714E0DE82B77CA2700E0EEFD /* SmartBoard */ = {
+			isa = PBXGroup;
+			children = (
+				714E0E322B77CF9800E0EEFD /* SmartBoard.entitlements */,
+				714E0DE92B77CA2700E0EEFD /* SmartBoardApp.swift */,
+				714E0DEB2B77CA2700E0EEFD /* ContentView.swift */,
+				714E0DEF2B77CA2700E0EEFD /* Assets.xcassets */,
+				714E0DF12B77CA2700E0EEFD /* Preview Content */,
+			);
+			path = SmartBoard;
+			sourceTree = "<group>";
+		};
+		714E0DF12B77CA2700E0EEFD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				714E0DF22B77CA2700E0EEFD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		714E0DFB2B77CA2700E0EEFD /* SmartBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				714E0DFC2B77CA2700E0EEFD /* SmartBoardTests.swift */,
+			);
+			path = SmartBoardTests;
+			sourceTree = "<group>";
+		};
+		714E0E052B77CA2700E0EEFD /* SmartBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				714E0E062B77CA2700E0EEFD /* SmartBoardUITests.swift */,
+				714E0E082B77CA2700E0EEFD /* SmartBoardUITestsLaunchTests.swift */,
+			);
+			path = SmartBoardUITests;
+			sourceTree = "<group>";
+		};
+		714E0E1A2B77CA4800E0EEFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				714E0E1B2B77CA4800E0EEFD /* WidgetKit.framework */,
+				714E0E1D2B77CA4800E0EEFD /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		714E0E3B2B77D97C00E0EEFD /* SmartBoardWidget */ = {
+			isa = PBXGroup;
+			children = (
+				714E0E3C2B77D97C00E0EEFD /* SmartBoardWidgetBundle.swift */,
+				714E0E3E2B77D97C00E0EEFD /* SmartBoardWidgetLiveActivity.swift */,
+				714E0E402B77D97C00E0EEFD /* SmartBoardWidget.swift */,
+				714E0E422B77D97C00E0EEFD /* AppIntent.swift */,
+				714E0E442B77D97D00E0EEFD /* Assets.xcassets */,
+				714E0E462B77D97D00E0EEFD /* Info.plist */,
+			);
+			path = SmartBoardWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		714E0DE52B77CA2700E0EEFD /* SmartBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714E0E0C2B77CA2700E0EEFD /* Build configuration list for PBXNativeTarget "SmartBoard" */;
+			buildPhases = (
+				714E0DE22B77CA2700E0EEFD /* Sources */,
+				714E0DE32B77CA2700E0EEFD /* Frameworks */,
+				714E0DE42B77CA2700E0EEFD /* Resources */,
+				714E0E312B77CA4900E0EEFD /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				714E0E482B77D97D00E0EEFD /* PBXTargetDependency */,
+			);
+			name = SmartBoard;
+			productName = SmartBoard;
+			productReference = 714E0DE62B77CA2700E0EEFD /* SmartBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		714E0DF72B77CA2700E0EEFD /* SmartBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714E0E0F2B77CA2700E0EEFD /* Build configuration list for PBXNativeTarget "SmartBoardTests" */;
+			buildPhases = (
+				714E0DF42B77CA2700E0EEFD /* Sources */,
+				714E0DF52B77CA2700E0EEFD /* Frameworks */,
+				714E0DF62B77CA2700E0EEFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				714E0DFA2B77CA2700E0EEFD /* PBXTargetDependency */,
+			);
+			name = SmartBoardTests;
+			productName = SmartBoardTests;
+			productReference = 714E0DF82B77CA2700E0EEFD /* SmartBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		714E0E012B77CA2700E0EEFD /* SmartBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714E0E122B77CA2700E0EEFD /* Build configuration list for PBXNativeTarget "SmartBoardUITests" */;
+			buildPhases = (
+				714E0DFE2B77CA2700E0EEFD /* Sources */,
+				714E0DFF2B77CA2700E0EEFD /* Frameworks */,
+				714E0E002B77CA2700E0EEFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				714E0E042B77CA2700E0EEFD /* PBXTargetDependency */,
+			);
+			name = SmartBoardUITests;
+			productName = SmartBoardUITests;
+			productReference = 714E0E022B77CA2700E0EEFD /* SmartBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		714E0E372B77D97C00E0EEFD /* SmartBoardWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 714E0E4A2B77D97D00E0EEFD /* Build configuration list for PBXNativeTarget "SmartBoardWidgetExtension" */;
+			buildPhases = (
+				714E0E342B77D97C00E0EEFD /* Sources */,
+				714E0E352B77D97C00E0EEFD /* Frameworks */,
+				714E0E362B77D97C00E0EEFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartBoardWidgetExtension;
+			productName = SmartBoardWidgetExtension;
+			productReference = 714E0E382B77D97C00E0EEFD /* SmartBoardWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		714E0DDE2B77CA2700E0EEFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					714E0DE52B77CA2700E0EEFD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					714E0DF72B77CA2700E0EEFD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 714E0DE52B77CA2700E0EEFD;
+					};
+					714E0E012B77CA2700E0EEFD = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 714E0DE52B77CA2700E0EEFD;
+					};
+					714E0E372B77D97C00E0EEFD = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 714E0DE12B77CA2700E0EEFD /* Build configuration list for PBXProject "SmartBoard" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 714E0DDD2B77CA2700E0EEFD;
+			productRefGroup = 714E0DE72B77CA2700E0EEFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				714E0DE52B77CA2700E0EEFD /* SmartBoard */,
+				714E0DF72B77CA2700E0EEFD /* SmartBoardTests */,
+				714E0E012B77CA2700E0EEFD /* SmartBoardUITests */,
+				714E0E372B77D97C00E0EEFD /* SmartBoardWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		714E0DE42B77CA2700E0EEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714E0DF32B77CA2700E0EEFD /* Preview Assets.xcassets in Resources */,
+				714E0DF02B77CA2700E0EEFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0DF62B77CA2700E0EEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0E002B77CA2700E0EEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0E362B77D97C00E0EEFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714E0E452B77D97D00E0EEFD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		714E0DE22B77CA2700E0EEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714E0DEC2B77CA2700E0EEFD /* ContentView.swift in Sources */,
+				714E0DEA2B77CA2700E0EEFD /* SmartBoardApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0DF42B77CA2700E0EEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714E0DFD2B77CA2700E0EEFD /* SmartBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0DFE2B77CA2700E0EEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714E0E072B77CA2700E0EEFD /* SmartBoardUITests.swift in Sources */,
+				714E0E092B77CA2700E0EEFD /* SmartBoardUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		714E0E342B77D97C00E0EEFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				714E0E412B77D97C00E0EEFD /* SmartBoardWidget.swift in Sources */,
+				714E0E432B77D97C00E0EEFD /* AppIntent.swift in Sources */,
+				714E0E3D2B77D97C00E0EEFD /* SmartBoardWidgetBundle.swift in Sources */,
+				714E0E3F2B77D97C00E0EEFD /* SmartBoardWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		714E0DFA2B77CA2700E0EEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 714E0DE52B77CA2700E0EEFD /* SmartBoard */;
+			targetProxy = 714E0DF92B77CA2700E0EEFD /* PBXContainerItemProxy */;
+		};
+		714E0E042B77CA2700E0EEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 714E0DE52B77CA2700E0EEFD /* SmartBoard */;
+			targetProxy = 714E0E032B77CA2700E0EEFD /* PBXContainerItemProxy */;
+		};
+		714E0E482B77D97D00E0EEFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 714E0E372B77D97C00E0EEFD /* SmartBoardWidgetExtension */;
+			targetProxy = 714E0E472B77D97D00E0EEFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		714E0E0A2B77CA2700E0EEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		714E0E0B2B77CA2700E0EEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		714E0E0D2B77CA2700E0EEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartBoard/SmartBoard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartBoard/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smartboard.SmartBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		714E0E0E2B77CA2700E0EEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SmartBoard/SmartBoard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SmartBoard/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smartboard.SmartBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		714E0E102B77CA2700E0EEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smartboard.SmartBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBoard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartBoard";
+			};
+			name = Debug;
+		};
+		714E0E112B77CA2700E0EEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smartboard.SmartBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartBoard.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartBoard";
+			};
+			name = Release;
+		};
+		714E0E132B77CA2700E0EEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smartboard.SmartBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartBoard;
+			};
+			name = Debug;
+		};
+		714E0E142B77CA2700E0EEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smartboard.SmartBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartBoard;
+			};
+			name = Release;
+		};
+		714E0E4B2B77D97D00E0EEFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SmartBoardWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartBoardWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmartBoardWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smartboard.SmartBoard.SmartBoardWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		714E0E4C2B77D97D00E0EEFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SmartBoardWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartBoardWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SmartBoardWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = smartboard.SmartBoard.SmartBoardWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		714E0DE12B77CA2700E0EEFD /* Build configuration list for PBXProject "SmartBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714E0E0A2B77CA2700E0EEFD /* Debug */,
+				714E0E0B2B77CA2700E0EEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		714E0E0C2B77CA2700E0EEFD /* Build configuration list for PBXNativeTarget "SmartBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714E0E0D2B77CA2700E0EEFD /* Debug */,
+				714E0E0E2B77CA2700E0EEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		714E0E0F2B77CA2700E0EEFD /* Build configuration list for PBXNativeTarget "SmartBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714E0E102B77CA2700E0EEFD /* Debug */,
+				714E0E112B77CA2700E0EEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		714E0E122B77CA2700E0EEFD /* Build configuration list for PBXNativeTarget "SmartBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714E0E132B77CA2700E0EEFD /* Debug */,
+				714E0E142B77CA2700E0EEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		714E0E4A2B77D97D00E0EEFD /* Build configuration list for PBXNativeTarget "SmartBoardWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				714E0E4B2B77D97D00E0EEFD /* Debug */,
+				714E0E4C2B77D97D00E0EEFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 714E0DDE2B77CA2700E0EEFD /* Project object */;
+}
