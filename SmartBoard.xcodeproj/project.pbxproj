@@ -22,6 +22,8 @@
 		714E0E432B77D97C00E0EEFD /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E422B77D97C00E0EEFD /* AppIntent.swift */; };
 		714E0E452B77D97D00E0EEFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 714E0E442B77D97D00E0EEFD /* Assets.xcassets */; };
 		714E0E492B77D97D00E0EEFD /* SmartBoardWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 714E0E382B77D97C00E0EEFD /* SmartBoardWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		714E0E4E2B79203A00E0EEFD /* SmartBoardIntents.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E4D2B79203A00E0EEFD /* SmartBoardIntents.intentdefinition */; };
+		714E0E512B79210F00E0EEFD /* UpdateWidgetTextIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714E0E502B79210F00E0EEFD /* UpdateWidgetTextIntent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,9 @@
 		714E0E422B77D97C00E0EEFD /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		714E0E442B77D97D00E0EEFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		714E0E462B77D97D00E0EEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		714E0E4D2B79203A00E0EEFD /* SmartBoardIntents.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = SmartBoardIntents.intentdefinition; sourceTree = "<group>"; };
+		714E0E4F2B79205000E0EEFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		714E0E502B79210F00E0EEFD /* UpdateWidgetTextIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateWidgetTextIntent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,10 +152,13 @@
 		714E0DE82B77CA2700E0EEFD /* SmartBoard */ = {
 			isa = PBXGroup;
 			children = (
+				714E0E4F2B79205000E0EEFD /* Info.plist */,
 				714E0E322B77CF9800E0EEFD /* SmartBoard.entitlements */,
 				714E0DE92B77CA2700E0EEFD /* SmartBoardApp.swift */,
 				714E0DEB2B77CA2700E0EEFD /* ContentView.swift */,
+				714E0E502B79210F00E0EEFD /* UpdateWidgetTextIntent.swift */,
 				714E0DEF2B77CA2700E0EEFD /* Assets.xcassets */,
+				714E0E4D2B79203A00E0EEFD /* SmartBoardIntents.intentdefinition */,
 				714E0DF12B77CA2700E0EEFD /* Preview Content */,
 			);
 			path = SmartBoard;
@@ -365,6 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				714E0DEC2B77CA2700E0EEFD /* ContentView.swift in Sources */,
+				714E0E512B79210F00E0EEFD /* UpdateWidgetTextIntent.swift in Sources */,
+				714E0E4E2B79203A00E0EEFD /* SmartBoardIntents.intentdefinition in Sources */,
 				714E0DEA2B77CA2700E0EEFD /* SmartBoardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,6 +560,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -581,6 +592,7 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SmartBoard/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
