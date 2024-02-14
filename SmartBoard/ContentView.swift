@@ -10,17 +10,17 @@ import WidgetKit
 
 struct ContentView: View {
     @AppStorage("widgetText", store: UserDefaults(suiteName: "group.leeyaso.smartboard"))
-    var widgetText: String = ""
+    var widgetText: Double = 0.0
 
     var body: some View {
         VStack {
-            TextField("Enter text for the widget", text: $widgetText)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .onSubmit {
-                    WidgetCenter.shared.reloadAllTimelines()
-                }
-                .padding()
-            Text("Current text: \(widgetText)")
+            TextField("Enter text for the widget", value: $widgetText, format: .number)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .onSubmit {
+                WidgetCenter.shared.reloadAllTimelines()
+            }
+            .padding()
+            Text("Current text: \(String(format: "%.2f", widgetText))")
         }
         .padding()
     }

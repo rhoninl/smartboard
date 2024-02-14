@@ -32,9 +32,13 @@ struct Provider: AppIntentTimelineProvider {
     }
     
     private func getData() -> String {
-        let widgetText = UserDefaults(suiteName: "group.leeyaso.smartboard")
+        guard let widgetText = UserDefaults(suiteName: "group.leeyaso.smartboard") else {
+                return "empty"
+        }
         
-        return widgetText?.value(forKey: "widgetText") as! String
+        let data = widgetText.value(forKey: "widgetText")
+        
+        return "\(data ?? "none")"
     }
 }
 
@@ -54,7 +58,8 @@ struct SmartBoardWidgetEntryView : View {
                 Spacer()
                     .frame(width: 75)
             }
-            Text(entry.str != "" ? entry.str : "empty")
+            Text(entry.str != "" ? "¥" + entry.str : "empty")
+                .font(.title)
         }
     }
 }

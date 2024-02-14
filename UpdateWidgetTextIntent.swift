@@ -2,7 +2,7 @@
 //  UpdateWidgetTextIntent.swift
 //  SmartBoard
 //
-//  Created by 李毓琪 on 2024/2/11.
+//  Created by 李毓琪 on 2024/2/14.
 //
 
 import Foundation
@@ -13,35 +13,40 @@ import WidgetKit
 struct UpdateWidgetTextIntent: AppIntent, WidgetConfigurationIntent, CustomIntentMigratedAppIntent, PredictableIntent {
     static let intentClassName = "UpdateWidgetTextIntentIntent"
 
-    static var title: LocalizedStringResource = "Update Widget Text Intent"
-    static var description = IntentDescription("Updates the text displayed on the widget.")
+    static var title: LocalizedStringResource = "Add Data to Varibale"
+    static var description = IntentDescription("Add Data to displayed on the widget.")
 
-    @Parameter(title: "Content", default: "None")
-    var content: String?
+    @Parameter(title: "Content")
+    var parameter: Double?
 
     static var parameterSummary: some ParameterSummary {
-        Summary("Place your new content: \(\.$content)") {
-            \.$content
+        Summary("Please Input your detal data") {
+            \.$parameter
         }
     }
 
     static var predictionConfiguration: some IntentPredictionConfiguration {
-        IntentPrediction(parameters: (\.$content)) { content in
+        IntentPrediction(parameters: (\.$parameter)) { parameter in
             DisplayRepresentation(
-                title: "Update content to \(content ?? "None")",
-                subtitle: "Update the widget text"
+                title: "Please Input your detal data",
+                subtitle: ""
             )
         }
     }
 
     func perform() async throws -> some IntentResult {
-        guard let content = content else {
+        print(parameter)
+        guard let parameter = parameter else {
             throw UpdateWidgetTextError.noContentProvided
         }
 
         // Save the new content to UserDefaults accessible by the widget
         let defaults = UserDefaults(suiteName: "group.leeyaso.smartboard")
-        defaults?.setValue(content, forKey: "widgetText")
+        guard let oldData = defaults?.value(forKey: "widgetText") as? Double else {
+            throw UpdateWidgetTextError.badOldData
+        }
+        
+        defaults?.setValue(oldData + parameter, forKey: "widgetText")
         
         // Ask the widget to refresh
         WidgetCenter.shared.reloadAllTimelines()
@@ -52,5 +57,13 @@ struct UpdateWidgetTextIntent: AppIntent, WidgetConfigurationIntent, CustomInten
 
 enum UpdateWidgetTextError: Error {
     case noContentProvided
+    case badOldData
+}
+
+@available(iOS 16.0, macOS 13.0, watchOS 9.0, tvOS 16.0, *)
+fileprivate extension IntentDialog {
+    static var parameterParameterPrompt: Self {
+        "Plase tell me the content"
+    }
 }
 

@@ -21,6 +21,8 @@
 			<string>set</string>
 			<key>INIntentConfigurable</key>
 			<true/>
+			<key>INIntentDescription</key>
+			<string>Add Data to displayed on the widget.</string>
 			<key>INIntentDescriptionID</key>
 			<string>4X3CNs</string>
 			<key>INIntentEligibleForWidgets</key>
@@ -32,7 +34,7 @@
 			<key>INIntentKeyParameter</key>
 			<string>parameter</string>
 			<key>INIntentLastParameterTag</key>
-			<integer>3</integer>
+			<integer>15</integer>
 			<key>INIntentManagedParameterCombinations</key>
 			<dict>
 				<key>parameter</key>
@@ -40,7 +42,7 @@
 					<key>INIntentParameterCombinationSupportsBackgroundExecution</key>
 					<true/>
 					<key>INIntentParameterCombinationTitle</key>
-					<string>Place Input your new content</string>
+					<string>Please Input your detal data</string>
 					<key>INIntentParameterCombinationTitleID</key>
 					<string>Ogo836</string>
 					<key>INIntentParameterCombinationUpdatesLinked</key>
@@ -62,12 +64,10 @@
 					<integer>1</integer>
 					<key>INIntentParameterMetadata</key>
 					<dict>
-						<key>INIntentParameterMetadataCapitalization</key>
-						<string>Sentences</string>
-						<key>INIntentParameterMetadataDefaultValue</key>
-						<string>None</string>
-						<key>INIntentParameterMetadataDefaultValueID</key>
-						<string>JbSc7V</string>
+						<key>INIntentParameterMetadataMaximumValue</key>
+						<real>1</real>
+						<key>INIntentParameterMetadataType</key>
+						<string>Field</string>
 					</dict>
 					<key>INIntentParameterName</key>
 					<string>parameter</string>
@@ -87,9 +87,42 @@
 					<key>INIntentParameterSupportsResolution</key>
 					<true/>
 					<key>INIntentParameterTag</key>
-					<integer>3</integer>
+					<integer>15</integer>
 					<key>INIntentParameterType</key>
-					<string>String</string>
+					<string>Decimal</string>
+					<key>INIntentParameterUnsupportedReasons</key>
+					<array>
+						<dict>
+							<key>INIntentParameterUnsupportedReasonCode</key>
+							<string>negativeNumbersNotSupported</string>
+							<key>INIntentParameterUnsupportedReasonDefault</key>
+							<true/>
+							<key>INIntentParameterUnsupportedReasonFormatString</key>
+							<string>${displayName} can’t be negative.</string>
+							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
+							<string>kOVk6F</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterUnsupportedReasonCode</key>
+							<string>greaterThanMaximumValue</string>
+							<key>INIntentParameterUnsupportedReasonDefault</key>
+							<true/>
+							<key>INIntentParameterUnsupportedReasonFormatString</key>
+							<string>${displayName} can’t be higher than ${maximumValue}.</string>
+							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
+							<string>3RJFpH</string>
+						</dict>
+						<dict>
+							<key>INIntentParameterUnsupportedReasonCode</key>
+							<string>lessThanMinimumValue</string>
+							<key>INIntentParameterUnsupportedReasonDefault</key>
+							<true/>
+							<key>INIntentParameterUnsupportedReasonFormatString</key>
+							<string>${displayName} can’t be lower than ${minimumValue}.</string>
+							<key>INIntentParameterUnsupportedReasonFormatStringID</key>
+							<string>vg53pd</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 			<key>INIntentResponse</key>
@@ -109,7 +142,7 @@
 				</array>
 			</dict>
 			<key>INIntentTitle</key>
-			<string>Update Widget Text Intent</string>
+			<string>Add Data to Varibale</string>
 			<key>INIntentTitleID</key>
 			<string>EiDVsk</string>
 			<key>INIntentType</key>
